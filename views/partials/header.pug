@@ -2,7 +2,10 @@ hader.header
     div.header__column
         a(href=routes.home)
             i.fab.fa-youtube
-    div.header__column
+    div.headCer__column
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="Header Seach", name="term")
+    div.headCer__column
         ul
             li
                 a(href=routes.join) Join
