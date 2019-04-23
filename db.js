@@ -8,7 +8,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useFindAndModify: false
   }
-)
+);
 
 const db = mongoose.connection;
 
