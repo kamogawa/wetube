@@ -21,6 +21,7 @@ const DELETE_VIDEO = "/:id/delete";
 // Github
 const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
+const ME = "/me";
 
 const routes = {
   home: HOME,
@@ -62,7 +63,8 @@ const routes = {
     }
   },
   gitHub: GITHUB,
-  githubCallback: GITHUB_CALLBACK
+  githubCallback: GITHUB_CALLBACK,
+  me: ME
 };
 
 export default routes;
