@@ -82,7 +82,7 @@ function setTotalTime() {
   totalTime.innerHTML = totalTimeString;
   setInterval(getCurrentTime, 1000);
 }
-
+//이벤트를 생성한다.
 function init() {
   playBtn.addEventListener("click", handlePlayClick);
   volumeBtn.addEventListener("click", handleVolumeClick);
@@ -90,6 +90,7 @@ function init() {
   videoPlayer.addEventListener("loadedmetadata", setTotalTime);
 }
 
+//비디오 컨테이너가 들어있는 경우 init()를 실행 시킨다.
 if (videoContainer) {
   init();
 }
